@@ -1,9 +1,47 @@
 package SimpleApplication;
-/** 
-* @author ×÷Õß binck: 
-* @version ´´½¨Ê±¼ä£º2018Äê6ÔÂ8ÈÕ ÏÂÎç3:25:09 
-* ÀàËµÃ÷ 
-*/
-public class Stest14 {
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+/**
+ * @author ä½œè€… binck:
+ * @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´6æœˆ8æ—¥ ä¸‹åˆ3:25:09 ç±»è¯´æ˜
+ */
+public class Stest14 {
+	public static void main(String[] args) {
+		ObjectOutputStream oos = null;
+		ObjectInputStream ois = null;
+		try {
+			File f = new File("Person.dat");
+			// *********Found**********
+			oos = new ObjectOutputStream(new FileOutputStream(f));
+			oos.writeObject(new Person("å°ç‹"));
+			oos.close();
+			ois = new ObjectInputStream(new FileInputStream(f));
+			// *********Found**********
+			Person d = (Person) ois.readObject();
+			System.out.println(d);
+			ois.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
+
+// *********Found**********
+class Person implements Serializable {
+	String name = null;
+
+	public Person(String s) {
+		name = s;
+	}
+
+	// *********Found**********
+	public String toString() {
+		return name;
+	}
 }
