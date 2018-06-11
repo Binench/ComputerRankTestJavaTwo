@@ -34,6 +34,7 @@ public class Stest14 {
 
 // *********Found**********
 class Person implements Serializable {
+	/* 为了保存在内存中的各种对象的状态，并且可以把保存的对象状态再读出来 */
 	String name = null;
 
 	public Person(String s) {
