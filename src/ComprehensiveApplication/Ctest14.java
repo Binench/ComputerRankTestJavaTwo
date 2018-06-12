@@ -27,13 +27,14 @@ public class Ctest14 {
 	}
 }
 
-class Change extends JPanel {
+// 同名问题，改名为Change1
+class Change1 extends JPanel {
 
 	int count = 200;
 	JLabel l1;
 	JButton b1, b2;
 
-	public Change() {
+	public Change1() {
 		setPreferredSize(new Dimension(280, 60));
 		l1 = new JLabel("200");
 		b1 = new JButton("增大");

@@ -14,7 +14,7 @@ public class Stest7 {
 		// *********Found**********
 		try {
 			// *********Found**********
-			/* 根目录下 */
+			/*根目录下*/
 			FileInputStream in = new FileInputStream("test.txt");
 			while ((len = in.read(buf, 0, 5)) > 0) {
 				for (int i = 0; i < len; i++)
