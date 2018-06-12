@@ -28,7 +28,7 @@ public class Stest18 {
 		}
 		try {
 			// *********Found********
-			/* 项目的根目录下 */
+			/*项目的根目录下*/
 			FileReader in = new FileReader(new File("test18.txt"));
 			BufferedReader inBR = new BufferedReader(in);
 			String stext = null;
