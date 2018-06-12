@@ -14,9 +14,7 @@ public class Stest7 {
 		// *********Found**********
 		try {
 			// *********Found**********
-			// FileInputStream in = new FileInputStream(
-			// "E:\\eclipse project\\Computer Rank Test java
-			// two\\src\\SimpleApplication\\test.txt");
+			/* ¸ùÄ¿Â¼ÏÂ */
 			FileInputStream in = new FileInputStream("test.txt");
 			while ((len = in.read(buf, 0, 5)) > 0) {
 				for (int i = 0; i < len; i++)
